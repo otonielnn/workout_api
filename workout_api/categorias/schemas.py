@@ -9,5 +9,5 @@ class CategoriaIn(BaseSchema):
     ]
 
 
-class CategoriaOut(CategoriaIn):
+class CentroTreinamento(CategoriaIn):
     id: Annotated[UUID4, Field(description="Identificador de categoria")]
