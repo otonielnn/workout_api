@@ -1,0 +1,17 @@
+# Criar um novo centro de treinamento
+POST http://localhost:8000/centro_treinamento/
+Content-Type: application/json
+
+{
+    "nome": "CT King",
+    "endereco": "Rua 2, C02",
+    "proprietario": "João"
+}
+
+###
+# Consultar todos os centros de treinamento
+GET http://localhost:8000/centro_treinamento/
+
+###
+# Consultar um centro de treinamento pelo id
+GET http://localhost:8000/centro_treinamento/302f89a0-8c37-4d1a-b77d-45dd7dff4c91

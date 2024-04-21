@@ -1,0 +1,35 @@
+#Criar um novo atleta
+POST http://localhost:8000/atletas/
+Content-Type: application/json
+
+{
+    "nome": "Pedro",
+    "cpf": "12345678902",
+    "idade": 23,
+    "peso": 75.6,
+    "altura": 1.75,
+    "sexo": "M",
+    "categoria": {
+        "nome": "Jumper"
+    },
+    "centro_treinamento": {
+        "nome": "CT King"
+    }
+}
+###
+# Consultar todo os atletas
+GET http://localhost:8000/atletas/
+
+###
+# Consultar um atleta por id
+GET http://localhost:8000/atletas/8c9dcbdb-3b20-47a5-836d-5bb16b118b84
+###
+# Editar um atleta pelo id
+PATCH  http://localhost:8000/atletas/8c9dcbdb-3b20-47a5-836d-5bb16b118b84
+
+{
+    "nome": "Pedro Sampaio"
+}
+###
+# Deletar um atleta pelo id
+DELETE  http://localhost:8000/atletas/8c9dcbdb-3b20-47a5-836d-5bb16b118b84

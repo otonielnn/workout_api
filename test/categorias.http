@@ -1,0 +1,15 @@
+# Criar uma nova Categoria
+POST http://localhost:8000/categorias/
+Content-Type: application/json
+
+{
+    "nome": "Jumper"
+}
+
+###
+# Consultar todas as categorias
+GET http://localhost:8000/categorias/
+
+###
+# Consultar categoria pelo id
+GET http://localhost:8000/categorias/45ac138f-74b7-4478-a5e0-64b395bcf616
